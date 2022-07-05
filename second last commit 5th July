@@ -1,0 +1,545 @@
+class restaurant(): 
+
+    def __init__(self): 
+
+        rem = 0 
+
+        area = 0 
+
+        rem = 0 
+
+        area = 0 
+
+ 
+
+    def runprog(self): 
+
+        print(" \n This program is a hotel setup & 
+
+management program for high profit using loan 
+
+amount from the bank without investing a penny of the 
+
+owner  \n profit = income-monthly expenditure(in INR) 
+
+\n average time taken per table is according to NAFTA 
+
+\n all the rates are in accordance with standard of the 
+
+area in which the restaurant is located \n every year 30% 
+
+income tax is paid to the government \n minimum 
+
+estimation for profit is taken into consideration \n 
+
+decent timings of the restaurant are 9 hours as follows : 
+
+12 p.m to 4 p.m & 7p.m to 12 a.m") 
+
+        print("decide the name of your restaurant tycoon") 
+
+        rt = input() 
+
+        print("decide budget (depends upon location) ") 
+
+        b1 = float(input()) 
+
+        print("take a commercial loan from bank for your 
+
+complete budget") 
+
+        print("loan principal amount =(inr)", b1) 
+
+        print("enter interest rate ") 
+
+        interestrate = float(input()) 
+
+        print("enter term (in years)") 
+
+        nt = float(input()) 
+
+        siloan = (b1 * interestrate * nt)/ 100.0 
+
+        loan = b1 + siloan 
+
+        loan1 = (loan) 
+
+        loan2 = (loan / nt) 
+
+        loan3 = (loan2) 
+
+        loan4 = loan2 / 12 
+
+        loan5 = (loan4) 
+
+        print("total amount of loan (including interest) to be 
+
+paid at the end of ", nt , " years=(inr)" , (loan1)) 
+
+        print("annual payment to the bank=(inr)", (loan3)) 
+
+        print("monthly payment (if decided)=(inr)", (loan5)) 
+
+        print("property price FORT-16 CR  LOWER 
+
+PAREL-12 CR  VASHI-8 CR  BANDRA-15 CR  COLABA-
+
+18 CR:") 
+
+        print("decide location : 1-FORT  2-LOWER PAREL  
+
+3-VASHI  4-BANDRA  5-COLABA ") 
+
+        l = float(input()) 
+
+        #part1 ends 
+
+ 
+
+        #part2starts 
+
+        if (l==1.0): 
+
+            area = 160000000 
+
+            rem = b1 - area 
+
+            print("your remaining budget= ", rem) 
+
+            print("your restaurant location : FORT") 
+
+        elif(l==2.0): 
+
+            area = 120000000 
+
+            rem = b1 - area 
+
+            print("your remaining budget= ", rem) 
+
+            print("your restaurant location : LOWER PAREL") 
+
+        elif(l==3.0): 
+
+            area = 80000000 
+
+            rem = b1 - area 
+
+            print("your remaining budget= ", rem) 
+
+            print("your restaurant location : VASHI") 
+
+        elif(l==4.0): 
+
+            area = 150000000 
+
+            rem = b1 - area 
+
+            print("your remaining budget= ", rem) 
+
+            print("your restaurant location : BANDRA") 
+
+        elif(l==5.0): 
+
+            area = 180000000 
+
+            rem = b1 - area 
+
+            print("your remaining budget= ", rem) 
+
+            print("your restaurant location : COLABA") 
+
+        else: 
+
+            print("re-enter a location from options") 
+
+        #part2ends     
+
+        b3 = rem 
+
+        #part3starts 
+
+        print("set-up expenditure ") 
+
+        print("legal & license expenses") 
+
+        ll = float(input()) 
+
+        # menu for setup 
+
+        print("decide the number of tables") 
+
+        t = float(input()) 
+
+        print("construction cost of 1 whole table") 
+
+        tc = float(input()) 
+
+        print("kitchen setup and vessels") 
+
+        kitch1 = float(input()) 
+
+        print("interior and decoration") 
+
+        dp = float(input()) 
+
+        print("cutlery ") 
+
+        cutl = float(input()) 
+
+        print("Computers and other electronic gadgets ") 
+
+        eg = float(input()) 
+
+        setup = (ll + eg + cutl + dp + kitch1 + (tc * t)) 
+
+        print("total setup expenditure =" + str(setup)) 
+
+        b2 = b3 - setup 
+
+        print("restaurant monthly expenditure from day1 :") 
+
+        print(" number of senior Chef") 
+
+        ch = float(input()) 
+
+        print(" salary of senior chefs") 
+
+        salc = float(input()) 
+
+        print(" number of Assistant Chefs") 
+
+        ach = float(input()) 
+
+        print(" salary of Assistant chefs") 
+
+        salach = float(input()) 
+
+        print(" number of waiters") 
+
+        w = float(input()) 
+
+        print(" salary of waiters") 
+
+        salw = float(input()) 
+
+        print(" number of cleaners") 
+
+        cl = float(input()) 
+
+        print(" salary of cleaners") 
+
+        salcl = float(input()) 
+
+        print(" number of managers") 
+
+        m = float(input()) 
+
+        print(" salary of managers") 
+
+        salm = float(input()) 
+
+        print("monthly electricity bill") 
+
+        ebill = float(input()) 
+
+        print("raw food and beverage material") 
+
+        rfb = float(input()) 
+
+        print("monthly maintenance expenditure") 
+
+        mant = float(input()) 
+
+        print(" miscelanous expenses") 
+
+        mexp = float(input()) 
+
+        monthe = (rfb + ebill + (salm * m) + (salw * w) + (salc 
+
+* ch) + (cl * salcl) + (salach * ach) + mexp + mant) 
+
+        print("monthly expenditure = ", monthe) 
+
+        print("weekdays income") 
+
+        print("number of hours opened in a day") 
+
+        wh = float(input()) 
+
+        print("average time spent by customer on a table(in 
+
+hours)") 
+
+        at = float(input()) 
+
+        print("average bill per table") 
+
+        # depends on location 
+
+        ab = float(input()) 
+
+        print("occupancy percentage") 
+
+        op = float(input()) 
+
+        weekdayi = (wh * at) * (ab * t) * op 
+
+        print("weekday - one day earning = ", weekdayi) 
+
+        weekdaysi = weekdayi * 4 
+
+        print("weekdays (monday to thursday) income)= ", 
+
+weekdaysi) 
+
+        print("weekend\'s income") 
+
+        print("number of hours opened in a day") 
+
+        wdh = float(input()) 
+
+        print("average time spent by customer on a table") 
+
+        at1 = float(input()) 
+
+        print("average bill per table") 
+
+        # depends on location 
+
+        ab1 = float(input()) 
+
+        print("occupancy percentage") 
+
+        op1 = float(input()) 
+
+        weekendi = (wdh * at1) * (ab1 * t) * op1 
+
+        print("weekend- one day earning = ", weekendi) 
+
+        weekendsi = weekendi * 3 
+
+        print("weekends (friday to sunday) income)= ", 
+
+weekendsi) 
+
+        weektotal = (weekendsi + weekdaysi) 
+
+        print("whole week income =rs.", weektotal) 
+
+        #part3ends 
+
+        #part4starts 
+
+        print("monthly income and profit(income-monthly 
+
+expenditure) \n loan payment is paid annually") 
+
+        print("january") 
+
+        inc1 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+        pr1 = inc1 - monthe 
+
+        print("january income=(inr) ", inc1) 
+
+        print("january profit=(inr) ", pr1) 
+
+        print("february") 
+
+        inc2 = (weekendsi * 4) + (weekdaysi * 4) 
+
+        pr2 = inc2 - monthe 
+
+        print("february income=(inr) ", inc2) 
+
+        print("february profit=(inr) ", pr2) 
+
+        print("march") 
+
+        inc3 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+        pr3 = inc3 - monthe 
+
+        print("march income=(inr) ", inc3) 
+
+        print("march profit=(inr) ", pr3) 
+
+        print("april") 
+
+        inc4 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi - 
+
+weekendi 
+
+        pr4 = inc4 - monthe 
+
+        print("april income=(inr) ", inc4) 
+
+        print("april profit=(inr) ", pr4) 
+
+        print("may") 
+
+        inc5 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+        pr5 = inc5 - monthe 
+
+        print("may income=(inr) ", inc5) 
+
+        print("may profit=(inr) ", pr5) 
+
+        print("june") 
+
+        inc6 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+- weekendi 
+
+        pr6 = inc6 - monthe 
+
+        print("june income=(inr) ", inc6) 
+
+        print("june profit=(inr) ", pr6) 
+
+        print("july") 
+
+        inc7 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+        pr7 = inc7 - monthe 
+
+        print("july income=(inr) ", inc7) 
+
+        print("july profit=(inr) ", pr7) 
+
+        print("august") 
+
+        inc8 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+- weekendi 
+
+        pr8 = inc8 - monthe 
+
+        print("august income=(inr) ", inc8) 
+
+        print("august profit=(inr) ", pr8) 
+
+        print("september") 
+
+        inc9 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+        pr9 = inc9 - monthe 
+
+        print("september income=(inr) ", inc9) 
+
+        print("september profit =(inr) ", pr9) 
+
+        print("october") 
+
+        inc10 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+- weekendi 
+
+        pr10 = inc10 - monthe 
+
+        print("october income=(inr) ", inc10) 
+
+        print("october profit=(inr) ", pr10) 
+
+        print("november") 
+
+        inc11 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+- weekendi 
+
+        pr11 = inc11 - monthe 
+
+        print("november income=(inr) ", inc11) 
+
+        print("november profit=(inr) ", pr11) 
+
+        print("december") 
+
+        inc12 = (weekendsi * 4) + (weekdaysi * 4) + weekendsi 
+
+        pr12 = inc12 - monthe 
+
+        print("december income=(inr) ", inc12) 
+
+        print("december profit=(inr) ", pr12) 
+
+        monthe1 = monthe * 12 
+
+        annuali = (inc1 + inc2 + inc3 + inc4 + inc5 + inc6 + 
+
+inc7 + inc8 + inc9 + inc10 + inc11 + inc12) 
+
+        annualp = (pr1 + pr2 + pr3 + pr4 + pr5 + pr6 + pr7 + 
+
+pr8 + pr9 + pr10 + pr11 + pr12) 
+
+        tax1 = annuali * 0.35 
+
+        money3 = (annualp) 
+
+        money1 = (annuali) 
+
+        annualnetp = annualp - tax1 - loan3 
+
+        money2 = (annualnetp) 
+
+        print("remaining money after setup= ", b2) 
+
+        print("annual income=(inr) ", money1) 
+
+        print("annual net profit(after deducting loan 
+
+(annual) payment and tax)=(inr) ", money2) 
+
+        print("annual profit (without tax and loan 
+
+payment)=(inr) ", money3) 
+
+        #partfinalstarts 
+
+        # decide how much u want?  
+
+        print("decide the number of years you want to run 
+
+the restaurant") 
+
+        nr = float(input()) 
+
+        annualneta = 0.0 
+
+        annualneta = 0.0 
+
+        i = 1.0 
+
+        while (i <= nr) : 
+
+            annualneta = annualneta + annualnetp 
+
+            i += 1 
+
+        money = (annualneta) 
+
+        print("total net income after ", nr,  " years= (inr)", 
+
+money) 
+
+        print("annual salary of the owner =(inr)", (money / 
+
+nr)) 
+
+        print("monthly salary of the owner=(inr)", ((money / 
+
+nr) / 12)) 
+
+        print("\n programmer : Fahad Faiz Kazi \n class : 10 
+
+A \n roll no.12") 
+
+ 
+
+
+def main():
+    resto = restaurant()
+    resto.runprog()
+main() 
